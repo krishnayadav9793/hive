@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+    "start-frontend": "webpack-dev-server --mode development",
+    "start-backend": "nodemon server.js",
+    "dev": "concurrently \"npm run start-frontend\" \"npm run start-backend\""
+  }
+}
