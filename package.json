@@ -3,8 +3,8 @@
     "concurrently": "^9.2.1"
   },
   "scripts": {
-    "start-frontend": "webpack-dev-server --mode development",
-    "start-backend": "nodemon server.js",
+    "start-frontend": "cd frontend && npm run dev",
+    "start-backend": "cd backend && npm run dev",
     "dev": "concurrently \"npm run start-frontend\" \"npm run start-backend\""
   },
   "devDependencies": {
