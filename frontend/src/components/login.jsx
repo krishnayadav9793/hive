@@ -144,6 +144,18 @@ export default function Login() {
                   Sign up
                 </a>
               </p>
+              <p className="text-gray-600">
+                Login as Hostel?{" "}
+                <a href="/login/hostel" className="text-blue-600 hover:text-blue-700 font-semibold">
+                  Hostel Login
+                </a>
+              </p>
+              <p className="text-gray-600">
+                Register as Hostel?{" "}
+                <a href="/signup/hostel" className="text-blue-600 hover:text-blue-700 font-semibold">
+                  Hostel Registration
+                </a>
+              </p>
             </div>
           </div>
         </div>

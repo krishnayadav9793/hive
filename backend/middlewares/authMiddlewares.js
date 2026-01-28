@@ -1,4 +1,4 @@
-import supabase from '../supabase'
+import {supabase} from '../supabase.js'
 
 export const authMiddleware =async (req,res,next)=>{
     try{
