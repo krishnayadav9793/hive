@@ -1,13 +1,13 @@
 import {supabase} from '../supabase.js'
 
-export const authMiddleware =async (req,res,next)=>{
+ const authMiddleware =async (req,res,next)=>{
     try{
         const authHeader =req.headers.authorization;
 
         if(!authHeader){
             return res.json({error:"No token provided"})
         }
-        const token =authHeader.split('')[1];
+        const token =authHeader.split(' ')[1];
 
         const {data:{user},error}=await supabase.auth.getUser(token);
         
@@ -22,3 +22,4 @@ export const authMiddleware =async (req,res,next)=>{
     res.json({ error: "Internal Server Error" });
   }
 }
+export default authMiddleware;
